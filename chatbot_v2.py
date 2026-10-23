@@ -23,7 +23,8 @@ from tkinter import filedialog, messagebox, scrolledtext
 import ollama
 
 MODEL = "gemma3:4b"
-SKILL_DIR = Path(__file__).resolve().parent
+PROJECT_DIR = Path(__file__).resolve().parent
+SKILL_DIR = PROJECT_DIR / "skills"
 DEFAULT_SKILL = SKILL_DIR / "skill.md"  # loaded automatically if it exists
 
 # **bold**, `code`, *italic*
